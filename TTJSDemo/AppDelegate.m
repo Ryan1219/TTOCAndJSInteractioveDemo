@@ -7,16 +7,75 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UIAlertViewDelegate>
 
 @end
 
 @implementation AppDelegate
 
 
+
+void exceptionHandler(NSException *exception) {
+    
+    // 拿到崩溃信息
+    NSMutableDictionary *info = [NSMutableDictionary dictionary];
+    info[@"stackSymbol"] = [exception callStackSymbols];
+    info[@"name"] = exception.name;
+    info[@"reason"] = exception.reason;
+    
+    [[UIApplication sharedApplication].delegate performSelector:@selector(handler)];
+}
+
+- (void)handler {
+//    UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:@"HaHa" message:@"Crash" preferredStyle:UIAlertControllerStyleAlert];
+    
+//    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        
+//        NSLog(@"-----clickedCancelIndex---");
+//        exit(0);
+//        
+//    }];
+    
+//    [alertCtrl addAction:cancel];
+//    
+//    self presen
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"HaHa" message:@"Crash" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [alertView show];
+    
+    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop] run];
+    
+    NSLog(@"-----never coming---");
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    NSLog(@"-----clickedButtonAtIndex---");
+    
+    exit(0);
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+//    NSSetUncaughtExceptionHandler(exceptionHandler);
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor clearColor];
+    [self.window makeKeyAndVisible];
+    
+    
+    ViewController *viewCtrl = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewCtrl];
+    self.window.rootViewController = nav;
+    
+    
+    
     return YES;
 }
 

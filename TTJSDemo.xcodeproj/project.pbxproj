@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42513B2D1E7F6FEE009B6F0E /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42513B2C1E7F6FEE009B6F0E /* NSObject+Extensions.m */; };
+		42513B301E7FD0A7009B6F0E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42513B2F1E7FD0A7009B6F0E /* Security.framework */; };
+		42513B331E7FD206009B6F0E /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42513B321E7FD205009B6F0E /* KeychainItemWrapper.m */; };
+		4278ECDB1E7BD3090023DC9C /* TTImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4278ECDA1E7BD3090023DC9C /* TTImageTool.m */; };
 		42A65C9A1E7A8FBD000C5C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A65C991E7A8FBD000C5C6E /* main.m */; };
 		42A65C9D1E7A8FBD000C5C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A65C9C1E7A8FBD000C5C6E /* AppDelegate.m */; };
 		42A65CA01E7A8FBD000C5C6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A65C9F1E7A8FBD000C5C6E /* ViewController.m */; };
@@ -14,9 +18,18 @@
 		42A65CA61E7A8FBD000C5C6E /* TTJSDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42A65CA41E7A8FBD000C5C6E /* TTJSDemo.xcdatamodeld */; };
 		42A65CA81E7A8FBD000C5C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A65CA71E7A8FBD000C5C6E /* Assets.xcassets */; };
 		42A65CAB1E7A8FBD000C5C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A65CA91E7A8FBD000C5C6E /* LaunchScreen.storyboard */; };
+		42A65CB31E7A921B000C5C6E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 42A65CB21E7A921B000C5C6E /* test.html */; };
+		42A65CE11E7BCD32000C5C6E /* TTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A65CE01E7BCD32000C5C6E /* TTProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42513B2B1E7F6FEE009B6F0E /* NSObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extensions.h"; sourceTree = "<group>"; };
+		42513B2C1E7F6FEE009B6F0E /* NSObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extensions.m"; sourceTree = "<group>"; };
+		42513B2F1E7FD0A7009B6F0E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		42513B311E7FD205009B6F0E /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		42513B321E7FD205009B6F0E /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		4278ECD91E7BD3090023DC9C /* TTImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageTool.h; sourceTree = "<group>"; };
+		4278ECDA1E7BD3090023DC9C /* TTImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTImageTool.m; sourceTree = "<group>"; };
 		42A65C951E7A8FBD000C5C6E /* TTJSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTJSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A65C991E7A8FBD000C5C6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42A65C9B1E7A8FBD000C5C6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +41,9 @@
 		42A65CA71E7A8FBD000C5C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42A65CAA1E7A8FBD000C5C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42A65CAC1E7A8FBD000C5C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A65CB21E7A921B000C5C6E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		42A65CDF1E7BCD32000C5C6E /* TTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProgressView.h; sourceTree = "<group>"; };
+		42A65CE01E7BCD32000C5C6E /* TTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42513B301E7FD0A7009B6F0E /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42513B2E1E7FD0A7009B6F0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42513B2F1E7FD0A7009B6F0E /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42A65C8C1E7A8FBC000C5C6E = {
 			isa = PBXGroup;
 			children = (
 				42A65C971E7A8FBD000C5C6E /* TTJSDemo */,
 				42A65C961E7A8FBD000C5C6E /* Products */,
+				42513B2E1E7FD0A7009B6F0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +88,21 @@
 			children = (
 				42A65C9B1E7A8FBD000C5C6E /* AppDelegate.h */,
 				42A65C9C1E7A8FBD000C5C6E /* AppDelegate.m */,
+				42513B311E7FD205009B6F0E /* KeychainItemWrapper.h */,
+				42513B321E7FD205009B6F0E /* KeychainItemWrapper.m */,
 				42A65C9E1E7A8FBD000C5C6E /* ViewController.h */,
 				42A65C9F1E7A8FBD000C5C6E /* ViewController.m */,
+				42A65CDF1E7BCD32000C5C6E /* TTProgressView.h */,
+				42A65CE01E7BCD32000C5C6E /* TTProgressView.m */,
+				4278ECD91E7BD3090023DC9C /* TTImageTool.h */,
+				4278ECDA1E7BD3090023DC9C /* TTImageTool.m */,
+				42513B2B1E7F6FEE009B6F0E /* NSObject+Extensions.h */,
+				42513B2C1E7F6FEE009B6F0E /* NSObject+Extensions.m */,
 				42A65CA11E7A8FBD000C5C6E /* Main.storyboard */,
 				42A65CA71E7A8FBD000C5C6E /* Assets.xcassets */,
 				42A65CA91E7A8FBD000C5C6E /* LaunchScreen.storyboard */,
 				42A65CAC1E7A8FBD000C5C6E /* Info.plist */,
+				42A65CB21E7A921B000C5C6E /* test.html */,
 				42A65CA41E7A8FBD000C5C6E /* TTJSDemo.xcdatamodeld */,
 				42A65C981E7A8FBD000C5C6E /* Supporting Files */,
 			);
@@ -142,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A65CAB1E7A8FBD000C5C6E /* LaunchScreen.storyboard in Resources */,
+				42A65CB31E7A921B000C5C6E /* test.html in Resources */,
 				42A65CA81E7A8FBD000C5C6E /* Assets.xcassets in Resources */,
 				42A65CA31E7A8FBD000C5C6E /* Main.storyboard in Resources */,
 			);
@@ -155,9 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A65CA01E7A8FBD000C5C6E /* ViewController.m in Sources */,
+				42A65CE11E7BCD32000C5C6E /* TTProgressView.m in Sources */,
 				42A65C9D1E7A8FBD000C5C6E /* AppDelegate.m in Sources */,
+				42513B2D1E7F6FEE009B6F0E /* NSObject+Extensions.m in Sources */,
+				4278ECDB1E7BD3090023DC9C /* TTImageTool.m in Sources */,
 				42A65C9A1E7A8FBD000C5C6E /* main.m in Sources */,
 				42A65CA61E7A8FBD000C5C6E /* TTJSDemo.xcdatamodeld in Sources */,
+				42513B331E7FD206009B6F0E /* KeychainItemWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M6K278EW5S;
 				INFOPLIST_FILE = TTJSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomtop.TTJSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M6K278EW5S;
 				INFOPLIST_FILE = TTJSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomtop.TTJSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -316,6 +358,7 @@
 				42A65CB11E7A8FBD000C5C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

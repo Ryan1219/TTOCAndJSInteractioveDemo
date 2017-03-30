@@ -10,4 +10,8 @@
 
 @interface TTProgressView : UIView
 
+
+
+@property (nonatomic,assign) CGFloat progress;
+
 @end

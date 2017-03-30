@@ -10,4 +10,7 @@
 
 @interface NSObject (Extensions)
 
+
+- (id)performSelector:(SEL)aSelector withObjects:(NSArray *)objects;
+
 @end

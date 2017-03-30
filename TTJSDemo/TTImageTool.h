@@ -10,4 +10,7 @@
 
 @interface TTImageTool : UIImage
 
+
+- (UIImage *)imageWithCornerRadius:(CGFloat)radius;
+
 @end
